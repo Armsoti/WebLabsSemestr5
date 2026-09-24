@@ -1,10 +1,10 @@
 :root {
   /* TODO: замініть на власний колір-акцент, напр. #7C4DFF або hsl(210 90% 56%) */
-  --accent: #9b59b6;
-  --bg: #0f1220;
-  --card: #151a2f;
-  --text: #e6e9f2;
-  --muted: #9aa4bf;
+  --accent: #a78bfa;
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f8fafc;
+  --muted: #64748b;
   --radius: 16px;
 }
 
