@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Детальний опис, умови догляду та сезонний графік поливу Монстери Деліціози в каталозі Зелений Рай.">
+  <title>Монстера Деліціоза - Зелений Рай</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header id="top">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Логотип Зелений Рай" width="40" height="40">
+      <span>Зелений Рай</span>
+    </a>
+
+    <nav aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="about.html">Про проєкт</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <form role="search">
+      <label for="plant-search">Пошук рослини:</label>
+      <input type="search" id="plant-search" name="q" placeholder="Знайти рослину...">
+      <button type="submit">Знайти</button>
+    </form>
+  </header>
+
+  <main>
+    <p><a href="index.html">&larr; Назад до каталогу</a></p>
+
+    <nav aria-label="Хлібні крихти">
+      <ol>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="index.html#monstera">Декоративно-листяні</a></li>
+        <li aria-current="page">Монстера Деліціоза</li>
+      </ol>
+    </nav>
+
+    <nav aria-label="На цій сторінці">
+      <h2>На цій сторінці</h2>
+      <ul>
+        <li><a href="#description">Опис та догляд</a></li>
+        <li><a href="#specs">Основні характеристики</a></li>
+        <li><a href="#seasonal-care">Сезонний графік догляду</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <p>Декоративно-листяні &bull; <strong>В наявності</strong></p>
+      <h1>Монстера Деліціоза</h1>
+
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="images/monstera.avif">
+          <source type="image/webp" srcset="images/monstera.webp">
+          <img src="images/monstera.jpg"
+            alt="Велика Монстера Деліціоза з різьбленим листям у світлому керамічному горщику" width="800" height="600"
+            fetchpriority="high">
+        </picture>
+        <figcaption>Монстера Деліціоза (<cite>Monstera deliciosa</cite>) у керамічному кашпо</figcaption>
+      </figure>
+
+      <section id="description">
+        <h2>Опис та догляд</h2>
+        <p>Монстера любить <strong>яскраве розсіяне світло</strong>, але добре адаптується і до легкої півтіні. Бережіть
+          велике різьблене листя від прямих сонячних променів, які можуть залишити опіки.</p>
+        <p>Поливайте рослину раз на 7-10 днів, коли верхній шар ґрунту підсохне. Регулярне обприскування підтримує
+          <em>комфортну вологість</em> і свіжий вигляд листя.</p>
+        <p>Використовуйте пухкий дренований ґрунт і горщик з отворами. <mark>Уникайте застою води</mark> - надлишок
+          вологи може пошкодити коріння.</p>
+      </section>
+
+      <section id="specs">
+        <h2>Основні характеристики</h2>
+        <dl>
+          <dt>Категорія освітлення</dt>
+          <dd>Розсіяне світло</dd>
+
+          <dt>Базова частота поливу</dt>
+          <dd>Кожні <data value="7">7 днів</data></dd>
+
+          <dt>Максимальна висота</dt>
+          <dd>до <data value="150">150 см</data></dd>
+
+          <dt>Складність догляду</dt>
+          <dd>Легка</dd>
+
+          <dt>Безпека для тварин</dt>
+          <dd>Небезпечна для тварин (містить оксалати кальцію)</dd>
+
+          <dt>Орієнтовна вартість</dt>
+          <dd><data value="450">450 ₴</data></dd>
+
+          <dt>Додано до каталогу</dt>
+          <dd><time datetime="2026-09-10">10.09.2026</time></dd>
+        </dl>
+      </section>
+
+      <section id="seasonal-care">
+        <h2>Сезонний графік догляду</h2>
+        <table>
+          <caption>Рекомендований режим поливу та освітлення Монстери Деліціози за порами року</caption>
+          <thead>
+            <tr>
+              <th scope="col">Сезон</th>
+              <th scope="col">Частота поливу (днів)</th>
+              <th scope="col">Освітлення та вологість</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Весна</th>
+              <td><data value="7">7 днів</data></td>
+              <td>Яскраве розсіяне світло, обприскування двічі на тиждень</td>
+            </tr>
+            <tr>
+              <th scope="row">Літо</th>
+              <td><data value="5">5 днів</data></td>
+              <td>Захист від прямого сонця, висока вологість повітря</td>
+            </tr>
+            <tr>
+              <th scope="row">Осінь</th>
+              <td><data value="9">9 днів</data></td>
+              <td>Помірне розсіяне світло, зменшення підживлення</td>
+            </tr>
+            <tr>
+              <th scope="row">Зима</th>
+              <td><data value="12">12 днів</data></td>
+              <td>Додаткове підсвічування, тримати подалі від батарей</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div>
+        <button type="button">Додати в кошик</button>
+        <button type="button">В обране</button>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Зелений Рай - Каталог кімнатних рослин.</p>
+    <p>Контакти: <a href="mailto:green.paradise@example.com">green.paradise@example.com</a></p>
+  </footer>
+</body>
+
+</html>
