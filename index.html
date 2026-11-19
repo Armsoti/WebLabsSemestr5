@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Каталог кімнатних рослин Зелений Рай з фільтрацією за освітленням та параметрами догляду.">
+    <title>Каталог кімнатних рослин — Зелений Рай</title>
+</head>
+
+<body>
+    <header class="header" id="top">
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo.svg" alt="Логотип Зелений Рай" title="Зелений Рай" width="40" height="40">
+            <span>Зелений Рай</span>
+        </a>
+
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html" aria-current="page">Каталог</a></li>
+                <li><a href="about.html">Про проєкт</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-bar" role="search">
+            <label for="plant-search">Пошук рослини:</label>
+            <input type="search" id="plant-search" name="q" placeholder="Наприклад, Монстера...">
+            <button type="submit">Знайти</button>
+        </form>
+    </header>
+
+    <main class="catalog-main">
+        <h1>Каталог кімнатних рослин</h1>
+
+        <section class="controls-row" aria-label="Фільтри та сортування">
+            <h2>Фільтрація та сортування</h2>
+
+            <div class="filters" role="group" aria-label="Фільтр за вимогами до світла">
+                <button type="button" class="filter-btn active">Всі</button>
+                <button type="button" class="filter-btn">Розсіяне світло</button>
+                <button type="button" class="filter-btn">Яскраве світло</button>
+                <button type="button" class="filter-btn">Півтінь</button>
+            </div>
+
+            <div class="sort-dropdown">
+                <label for="sort">Сортувати за:</label>
+                <select id="sort" name="sort">
+                    <option value="name">назвою</option>
+                    <option value="watering-asc">частотою поливу (рідше)</option>
+                    <option value="height-desc">висотою (від вищих)</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="plant-grid" aria-label="Перелік рослин">
+            <h2>Доступні рослини</h2>
+
+            <ul>
+                <li>
+                    <article class="plant-card" id="monstera">
+                        <img src="assets/img/monstera.png"
+                            srcset="assets/img/monstera.png 400w, assets/img/monstera.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Монстера Деліціоза у керамічному горщику"
+                            title="Монстера Деліціоза" width="400" height="300" fetchpriority="high">
+
+                        <p class="category-label">Розсіяне світло</p>
+                        <h3>Монстера Деліціоза</h3>
+                        <p class="description">Тропічна красуня з виразними різьбленими листками. Любить стабільне тепло
+                            та вологе повітря.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="7">7 днів</data></li>
+                            <li>Максимальна висота: <data value="150">150 см</data></li>
+                            <li>Безпека: <strong>Небезпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-10">10.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Монстеру Деліціозу в обране">В
+                            обране</button>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="plant-card" id="ficus">
+                        <img src="assets/img/ficus.png" srcset="assets/img/ficus.png 400w, assets/img/ficus.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Фікус Лірата з великим листям"
+                            title="Фікус Лірата" width="400" height="300" loading="lazy">
+
+                        <p class="category-label">Яскраве світло</p>
+                        <h3>Фікус Лірата</h3>
+                        <p class="description">Скульптурний фікус із великим глянцевим листям. Найкраще росте на
+                            постійному місці без протягів.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="5">5 днів</data></li>
+                            <li>Максимальна висота: <data value="220">220 см</data></li>
+                            <li>Безпека: <strong>Небезпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-12">12.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Фікус Лірата в обране">В
+                            обране</button>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="plant-card" id="calathea">
+                        <img src="assets/img/calathea.png"
+                            srcset="assets/img/calathea.png 400w, assets/img/calathea.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Калатея Орбіфолія зі смугастим листям"
+                            title="Калатея Орбіфолія" width="400" height="300" loading="lazy">
+
+                        <p class="category-label">Півтінь</p>
+                        <h3>Калатея Орбіфолія</h3>
+                        <p class="description">Декоративна рослина з округлим листям у сріблясту смужку, яка ввечері
+                            піднімає листки вгору.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="4">4 дні</data></li>
+                            <li>Максимальна висота: <data value="80">80 см</data></li>
+                            <li>Безпека: <strong>Безпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-14">14.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Калатею Орбіфолію в обране">В
+                            обране</button>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="plant-card" id="chlorophytum">
+                        <img src="assets/img/chlorophytum.png"
+                            srcset="assets/img/chlorophytum.png 400w, assets/img/chlorophytum.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Хлорофітум чубатий у підвісному кашпо"
+                            title="Хлорофітум чубатий" width="400" height="300" loading="lazy">
+
+                        <p class="category-label">Розсіяне світло</p>
+                        <h3>Хлорофітум чубатий</h3>
+                        <p class="description">Невибагливий очищувач повітря з дугоподібним строкатим листям, ідеальний
+                            для початківців.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="6">6 днів</data></li>
+                            <li>Максимальна висота: <data value="50">50 см</data></li>
+                            <li>Безпека: <strong>Безпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-15">15.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Хлорофітум чубатий в обране">В
+                            обране</button>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="plant-card" id="sansevieria">
+                        <img src="assets/img/sansevieria.png"
+                            srcset="assets/img/sansevieria.png 400w, assets/img/sansevieria.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Сансевієрія трисмугова з вертикальним листям"
+                            title="Сансевієрія трисмугова" width="400" height="300" loading="lazy">
+
+                        <p class="category-label">Півтінь</p>
+                        <h3>Сансевієрія трисмугова</h3>
+                        <p class="description">Надзвичайно витривалий сукулент із щільним мечоподібним листям, що
+                            витримує рідкий полив.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="14">14 днів</data></li>
+                            <li>Максимальна висота: <data value="110">110 см</data></li>
+                            <li>Безпека: <strong>Небезпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-18">18.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Сансевієрію трисмугову в обране">В
+                            обране</button>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="plant-card" id="haworthia">
+                        <img src="assets/img/haworthia.png"
+                            srcset="assets/img/haworthia.png 400w, assets/img/haworthia.png 800w"
+                            sizes="(max-width: 600px) 100vw, 400px" alt="Гавортія смугаста у мініатюрному горщику"
+                            title="Гавортія смугаста" width="400" height="300" loading="lazy">
+
+                        <p class="category-label">Яскраве світло</p>
+                        <h3>Гавортія смугаста</h3>
+                        <p class="description">Компактний сукулент із м'ясистими листками та білими рельєфними смужками,
+                            безпечний для котів і собак.</p>
+
+                        <ul class="features-list">
+                            <li>Полив: кожні <data value="12">12 днів</data></li>
+                            <li>Максимальна висота: <data value="20">20 см</data></li>
+                            <li>Безпека: <strong>Безпечна для тварин</strong></li>
+                            <li>Додано: <time datetime="2026-09-20">20.09.2026</time></li>
+                        </ul>
+
+                        <button type="button" class="favorite-btn" aria-label="Додати Гавортію смугасту в обране">В
+                            обране</button>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <p>&copy; 2026 Зелений Рай — Каталог кімнатних рослин.</p>
+        <p>Контакти: <a href="mailto:green.paradise@example.com">green.paradise@example.com</a></p>
+    </footer>
+</body>
+
+</html> 
