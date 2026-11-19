@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Інформація про каталог кімнатних рослин Зелений Рай, інструкція користувача та відеопоради з догляду.">
+  <title>Про проєкт - Зелений Рай</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header id="top">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Логотип Зелений Рай" width="40" height="40">
+      <span>Зелений Рай</span>
+    </a>
+
+    <nav aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="about.html" aria-current="page">Про проєкт</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <form role="search">
+      <label for="plant-search">Пошук рослини:</label>
+      <input type="search" id="plant-search" name="q" placeholder="Знайти рослину...">
+      <button type="submit">Знайти</button>
+    </form>
+  </header>
+
+  <main>
+    <h1>Про проєкт «Зелений Рай»</h1>
+    <p><strong>Зелений Рай</strong> - це навчальний вебкаталог кімнатних рослин, створений для зручного підбору
+      домашньої флори за умовами освітлення, частотою поливу та безпечністю для домашніх улюбленців.</p>
+
+    <section>
+      <h2>Як користуватися каталогом</h2>
+      <ol>
+        <li>Перейдіть на сторінку <a href="index.html">Каталогу</a> та скористайтеся фільтрами за типом освітлення або
+          рядком пошуку.</li>
+        <li>Відсортуйте перелік рослин за назвою, частотою поливу чи максимальною висотою.</li>
+        <li>Натисніть на назву обраної рослини, щоб відкрити сторінку з детальним описом і таблицями сезонного догляду.
+        </li>
+        <li>Перевірте позначку токсичності, якщо вдома є коти чи собаки, і додайте рослину до списку обраного.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Що з'явиться в наступних версіях застосунку</h2>
+      <ul>
+        <li>Адаптивна візуальна стилізація на основі дизайн-макета з Figma за допомогою <abbr
+            title="Cascading Style Sheets">CSS</abbr>.</li>
+        <li>Інтерактивна фільтрація, живий пошук та збереження обраних рослин через JavaScript.</li>
+        <li>Динамічне завантаження карток і деталей кожної рослини з <abbr
+            title="Representational State Transfer Application Programming Interface">REST API</abbr>.</li>
+        <li>Калькулятор індивідуального графіка поливу з нагадуваннями.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Відеоінструкція з базового догляду за рослинами</h2>
+      <video controls width="640" height="360" preload="metadata" poster="media/poster.jpg">
+        <source src="media/care-guide.webm" type="video/webm">
+        <source src="media/care-guide.mp4" type="video/mp4">
+        <track kind="captions" src="media/care-guide.uk.vtt" srclang="uk" label="Українська" default>
+        <p>Ваш браузер не підтримує вбудоване відтворення відео. <a href="media/care-guide.mp4">Завантажте
+            відеофайл</a>.</p>
+      </video>
+    </section>
+
+    <section>
+      <h2>Часті запитання</h2>
+      <details name="faq" open>
+        <summary>Як визначити, чи підходить рослина для північного вікна?</summary>
+        <p>Оберіть у каталозі категорію «Півтінь» або зверніть увагу на те, чи потребує рослина прямого яскравого
+          світла.</p>
+      </details>
+
+      <details name="faq">
+        <summary>Що означає позначка «Небезпечна для тварин»?</summary>
+        <p>Деякі тропічні рослини (наприклад, монстера або фікус) містять речовини, що можуть викликати подразнення у
+          котів чи собак при поїданні листя.</p>
+      </details>
+
+      <details name="faq">
+        <summary>Як часто потрібно змінювати режим поливу взимку?</summary>
+        <p>У холодну пору року ріст більшості рослин сповільнюється, тому інтервал між поливами збільшується на 3-5
+          днів. Точні значення вказані в таблиці сезонного догляду на сторінці рослини.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Контакти автора проєкту</h2>
+      <address>
+        Розробник: студентка групи ІН-41<br>
+        Навчальний заклад: Сумський державний університет, факультет ЕлІТ<br>
+        Електронна пошта: <a href="mailto:d.shcherban@student.sumdu.edu.ua">d.shcherban@student.sumdu.edu.ua</a>
+      </address>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Зелений Рай - Каталог кімнатних рослин.</p>
+    <p>Контакти: <a href="mailto:green.paradise@example.com">green.paradise@example.com</a></p>
+  </footer>
+</body>
+
+</html>
